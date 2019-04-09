@@ -1,0 +1,15 @@
+<h1>
+  Wellcome To Reg.
+</h1>
+
+<div>
+  <app-input [type]="'text'" [name]="'fName'" [label]="'First Name'"></app-input><br>
+  <app-input [type]="'email'" [name]="'email'" [label]="'E-Mail'"></app-input><br>
+  <app-input [type]="'password'" [name]="'password'" [label]="'password'"></app-input><br>
+</div>
+<div>
+  <app-selector [name]="'select'" [options]="options"></app-selector>
+</div>
+<div>
+  <app-submit [text]="'Reg'" (notifyParent)="regNotify($event)"></app-submit>
+</div>

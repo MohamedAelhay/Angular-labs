@@ -1,0 +1,12 @@
+<h1>
+  Wellcome To Login
+</h1>
+
+<div>
+  <app-input [type]="'email'" [name]="'email'" [label]="'E-Mail'"></app-input><br>
+  <app-input [type]="'password'" [name]="'password'" [label]="'password'"></app-input><br>
+</div>
+
+<div>
+  <app-submit [text]="'Login'" (notifyParent)="loginNotify($event)"></app-submit>
+</div>
